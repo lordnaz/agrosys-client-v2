@@ -38,7 +38,7 @@
                   </g>
                 </g>
               </svg></span>
-            <h2 class="brand-text mb-0">Vuexy</h2>
+            <h2 class="brand-text mb-0">AgroSys</h2>
           </a>
         </li>
       </ul>
@@ -53,7 +53,7 @@
       <li class="nav-item"><a class="nav-link menu-toggle" href="javascript:void(0);"><i class="ficon"
             data-feather="menu"></i></a></li>
     </ul>
-    <ul class="nav navbar-nav bookmark-icons">
+    {{-- <ul class="nav navbar-nav bookmark-icons">
       <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{ url('app/email') }}"
           data-bs-toggle="tooltip" data-bs-placement="bottom" title="Email"><i class="ficon"
             data-feather="mail"></i></a></li>
@@ -66,8 +66,8 @@
       <li class="nav-item d-none d-lg-block"><a class="nav-link" href="{{ url('app/todo') }}"
           data-bs-toggle="tooltip" data-bs-placement="bottom" title="Todo"><i class="ficon"
             data-feather="check-square"></i></a></li>
-    </ul>
-    <ul class="nav navbar-nav">
+    </ul> --}}
+    {{-- <ul class="nav navbar-nav">
       <li class="nav-item d-none d-lg-block">
         <a class="nav-link bookmark-star">
           <i class="ficon text-warning" data-feather="star"></i>
@@ -80,7 +80,7 @@
           <ul class="search-list search-list-bookmark"></ul>
         </div>
       </li>
-    </ul>
+    </ul> --}}
   </div>
   <ul class="nav navbar-nav align-items-center ms-auto">
     <li class="nav-item dropdown dropdown-language">
@@ -92,7 +92,7 @@
         <a class="dropdown-item" href="{{ url('lang/en') }}" data-language="en">
           <i class="flag-icon flag-icon-us"></i> English
         </a>
-        <a class="dropdown-item" href="{{ url('lang/fr') }}" data-language="fr">
+        {{-- <a class="dropdown-item" href="{{ url('lang/fr') }}" data-language="fr">
           <i class="flag-icon flag-icon-fr"></i> French
         </a>
         <a class="dropdown-item" href="{{ url('lang/de') }}" data-language="de">
@@ -100,12 +100,15 @@
         </a>
         <a class="dropdown-item" href="{{ url('lang/pt') }}" data-language="pt">
           <i class="flag-icon flag-icon-pt"></i> Portuguese
+        </a> --}}
+        <a class="dropdown-item" href="{{ url('lang/my') }}" data-language="my">
+            <i class="flag-icon flag-icon-my"></i> Malay
         </a>
       </div>
     </li>
     <li class="nav-item d-none d-lg-block"><a class="nav-link nav-link-style"><i class="ficon"
           data-feather="{{ $configData['theme'] === 'dark' ? 'sun' : 'moon' }}"></i></a></li>
-    <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon"
+    {{-- <li class="nav-item nav-search"><a class="nav-link nav-link-search"><i class="ficon"
           data-feather="search"></i></a>
       <div class="search-input">
         <div class="search-input-icon"><i data-feather="search"></i></div>
@@ -113,8 +116,8 @@
         <div class="search-input-close"><i data-feather="x"></i></div>
         <ul class="search-list search-list-main"></ul>
       </div>
-    </li>
-    <li class="nav-item dropdown dropdown-cart me-25">
+    </li> --}}
+    {{-- <li class="nav-item dropdown dropdown-cart me-25">
       <a class="nav-link" href="javascript:void(0);" data-bs-toggle="dropdown">
         <i class="ficon" data-feather="shopping-cart"></i>
         <span class="badge rounded-pill bg-primary badge-up cart-item-count">6</span>
@@ -224,7 +227,8 @@
           <a class="btn btn-primary w-100" href="{{ url('app/ecommerce/checkout') }}">Checkout</a>
         </li>
       </ul>
-    </li>
+    </li> --}}
+
     <li class="nav-item dropdown dropdown-notification me-25">
       <a class="nav-link" href="javascript:void(0);" data-bs-toggle="dropdown">
         <i class="ficon" data-feather="bell"></i>
@@ -238,7 +242,7 @@
           </div>
         </li>
         <li class="scrollable-container media-list">
-          <a class="d-flex" href="javascript:void(0)">
+          {{-- <a class="d-flex" href="javascript:void(0)">
             <div class="list-item d-flex align-items-start">
               <div class="me-1">
                 <div class="avatar">
@@ -277,14 +281,14 @@
                 <small class="notification-text"> MD Inc. order updated</small>
               </div>
             </div>
-          </a>
-          <div class="list-item d-flex align-items-center">
+          </a> --}}
+          {{-- <div class="list-item d-flex align-items-center">
             <h6 class="fw-bolder me-auto mb-0">System Notifications</h6>
             <div class="form-check form-check-primary form-switch">
               <input class="form-check-input" id="systemNotification" type="checkbox" checked="">
               <label class="form-check-label" for="systemNotification"></label>
             </div>
-          </div>
+          </div> --}}
           <a class="d-flex" href="javascript:void(0)">
             <div class="list-item d-flex align-items-start">
               <div class="me-1">

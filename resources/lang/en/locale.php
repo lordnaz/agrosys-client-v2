@@ -1,6 +1,17 @@
 <?php
 
 return [
+    // Nazrul Begin 
+    "Setting" => "Setting",
+    "Weather" => "Weather",
+    "Water" => "Water",
+    "Soil" => "Soil",
+    "Monitor" => "Monitor",
+    "Add Device" => "Add Device",
+    "Set Threshold" => "Set Threshold",
+    "List Device" => "View Device",
+    // End of Nazrul
+
     "Apps & Pages" => "Apps & Pages",
     "User Interface" => "User Interface",
     "Dashboards" => "Dashboards",

@@ -6,6 +6,30 @@ use Illuminate\Http\Request;
 
 class FormsController extends Controller
 {
+
+    
+    // Form Elements - Show All Device
+    public function all_device()
+    {
+        $breadcrumbs = [
+            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "All Categories"], ['name' => "All Device"]
+        ];
+        return view('/content/agrosys/device-list', [
+            'breadcrumbs' => $breadcrumbs
+        ]);
+    }
+
+    // Form Elements - Add New Device
+    public function add_device_weather()
+    {
+        $breadcrumbs = [
+            ['link' => "/", 'name' => "Home"], ['link' => "javascript:void(0)", 'name' => "Weather"], ['name' => "Add Device"]
+        ];
+        return view('/content/agrosys/add-device-weather', [
+            'breadcrumbs' => $breadcrumbs
+        ]);
+    }
+
     // Form Elements - Input
     public function input()
     {

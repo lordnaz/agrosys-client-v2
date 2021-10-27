@@ -58,17 +58,17 @@ $(window).on('load', function () {
   var isRtl = $('html').attr('data-textdirection') === 'rtl';
 
   // On load Toast
-  setTimeout(function () {
-    toastr['success'](
-      'You have successfully logged in to Vuexy. Now you can start to explore!',
-      '👋 Welcome John Doe!',
-      {
-        closeButton: true,
-        tapToDismiss: false,
-        rtl: isRtl
-      }
-    );
-  }, 2000);
+//   setTimeout(function () {
+//     toastr['success'](
+//       'You have successfully logged in to Vuexy. Now you can start to explore!',
+//       '👋 Welcome John Doe!',
+//       {
+//         closeButton: true,
+//         tapToDismiss: false,
+//         rtl: isRtl
+//       }
+//     );
+//   }, 2000);
 
   //------------ Statistics Bar Chart ------------
   //----------------------------------------------
@@ -436,8 +436,8 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.primary],
-    series: [54.4],
+    colors: [window.colors.solid.warning],
+    series: [20.4],
     plotOptions: {
       radialBar: {
         hollow: {
@@ -480,7 +480,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.warning],
+    colors: [window.colors.solid.danger],
     series: [6.1],
     plotOptions: {
       radialBar: {
@@ -524,7 +524,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.secondary],
+    colors: [window.colors.solid.warning],
     series: [14.6],
     plotOptions: {
       radialBar: {
@@ -568,7 +568,7 @@ $(window).on('load', function () {
         bottom: -15
       }
     },
-    colors: [window.colors.solid.info],
+    colors: [window.colors.solid.danger],
     series: [4.2],
     plotOptions: {
       radialBar: {

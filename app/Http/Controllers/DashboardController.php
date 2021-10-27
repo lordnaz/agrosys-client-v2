@@ -21,4 +21,12 @@ class DashboardController extends Controller
 
     return view('/content/dashboard/dashboard-ecommerce', ['pageConfigs' => $pageConfigs]);
   }
+
+  public function dashboardMain()
+  {
+    $pageConfigs = ['pageHeader' => false];
+
+    return view('/content/agrosys/dashboard-main', ['pageConfigs' => $pageConfigs]);
+  }
+  
 }

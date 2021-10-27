@@ -55,17 +55,17 @@ data-asset-path="{{ asset('/')}}">
   </div>
   <!-- End: Content-->
 
-  @if($configData['blankPage'] == false && isset($configData['blankPage']))
+  {{-- @if($configData['blankPage'] == false && isset($configData['blankPage']))
   @include('content/pages/customizer')
 
   @include('content/pages/buy-now')
-  @endif
+  @endif --}}
 
   <div class="sidenav-overlay"></div>
   <div class="drag-target"></div>
 
   {{-- include footer --}}
-  @include('panels/footer')
+  {{-- @include('panels/footer') --}}
 
   {{-- include default scripts --}}
   @include('panels/scripts')

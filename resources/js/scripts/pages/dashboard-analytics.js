@@ -35,17 +35,17 @@ $(window).on('load', function () {
   var isRtl = $('html').attr('data-textdirection') === 'rtl';
 
   // On load Toast
-  setTimeout(function () {
-    toastr['success'](
-      'You have successfully logged in to Vuexy. Now you can start to explore!',
-      '👋 Welcome John Doe!',
-      {
-        closeButton: true,
-        tapToDismiss: false,
-        rtl: isRtl
-      }
-    );
-  }, 2000);
+//   setTimeout(function () {
+//     toastr['success'](
+//       'You have successfully logged in to Vuexy. Now you can start to explore!',
+//       '👋 Welcome John Doe!',
+//       {
+//         closeButton: true,
+//         tapToDismiss: false,
+//         rtl: isRtl
+//       }
+//     );
+//   }, 2000);
 
   // Subscribed Gained Chart
   // ----------------------------------
@@ -285,7 +285,7 @@ $(window).on('load', function () {
       dashArray: 8
     },
     series: [83],
-    labels: ['Completed Tickets']
+    labels: ['Health Check']
   };
   supportTrackerChart = new ApexCharts($supportTrackerChart, supportTrackerChartOptions);
   supportTrackerChart.render();

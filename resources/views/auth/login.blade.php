@@ -47,10 +47,10 @@
                 </g>
               </g>
             </svg>
-            <h2 class="brand-text text-primary ms-1">Vuexy</h2>
+            <h2 class="brand-text text-primary ms-1">AgroSys</h2>
           </a>
 
-          <h4 class="card-title mb-1">Welcome to Vuexy! 👋</h4>
+          <h4 class="card-title mb-1">Welcome to AgroSys! 👋</h4>
           <p class="card-text mb-2">Please sign-in to your account and start the adventure</p>
 
           @if (session('status'))
@@ -91,13 +91,13 @@
                 <span class="input-group-text cursor-pointer"><i data-feather="eye"></i></span>
               </div>
             </div>
-            <div class="mb-1">
+            {{-- <div class="mb-1">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="remember" name="remember" tabindex="3"
                   {{ old('remember') ? 'checked' : '' }} />
                 <label class="form-check-label" for="remember"> Remember Me </label>
               </div>
-            </div>
+            </div> --}}
             <button type="submit" class="btn btn-primary w-100" tabindex="4">Sign in</button>
           </form>
 
@@ -110,7 +110,7 @@
             @endif
           </p>
 
-          <div class="divider my-2">
+          {{-- <div class="divider my-2">
             <div class="divider-text">or</div>
           </div>
 
@@ -127,7 +127,7 @@
             <a href="#" class="btn btn-github">
               <i data-feather="github"></i>
             </a>
-          </div>
+          </div> --}}
         </div>
       </div>
       <!-- /Login basic -->

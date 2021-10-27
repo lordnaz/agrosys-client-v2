@@ -27,9 +27,24 @@ use App\Http\Controllers\ChartsController;
 |
 */
 
-// Main Page Route
-Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
 
+// Main Page Route
+// Route::get('/', [DashboardController::class, 'dashboardEcommerce'])->name('dashboard-ecommerce');
+
+Route::get('/', function () {
+    if(auth()->user()){
+        return redirect('monitoring');
+    }else{
+        // return view('auth.login');
+        return redirect('login');
+    }
+});
+
+Route::group([ "middleware" => ['auth:sanctum', 'verified'] ], function() {
+    Route::get('/monitoring', [DashboardController::class, 'dashboardMain'])->name('monitoring');
+    Route::get('/add-device-weather', [FormsController::class, 'add_device_weather'])->name('add-device-weather');
+    Route::get('/all-device', [FormsController::class, 'all_device'])->name('all-device');
+});
 
 /* Route Dashboards */
 Route::group(['prefix' => 'dashboard'], function () {
@@ -239,6 +254,6 @@ Route::get('/maps/leaflet', [ChartsController::class, 'maps_leaflet'])->name('ma
 // locale Route
 Route::get('lang/{locale}', [LanguageController::class, 'swap']);
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
+// Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+//     return view('dashboard');
+// })->name('dashboard');
